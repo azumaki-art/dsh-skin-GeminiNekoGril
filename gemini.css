@@ -1,0 +1,226 @@
+/* Gemini Starlight Neko Theme for DeepSeek Harness Web GUI */
+
+body[data-dsh-gemini-skin] {
+  --gemini-ink: #1d1b38;
+  --gemini-purple: #7b68ee;
+  --gemini-cyan: #38bdf8;
+  --gemini-gold: #f59e0b;
+  --gemini-shadow: 0 18px 54px rgba(123, 104, 238, 0.14), 0 2px 8px rgba(99, 102, 241, 0.08);
+
+  --dsw-alias-bg-base: transparent;
+  --dsw-alias-bg-layer-1: rgba(248, 247, 255, 0.88);
+  --dsw-alias-bg-layer-2: rgba(243, 240, 255, 0.92);
+  --dsw-alias-bg-layer-3: rgba(236, 231, 255, 0.95);
+  --dsw-alias-bg-overlay: rgba(253, 252, 255, 0.98);
+
+  --dsw-alias-border-l1: rgba(123, 104, 238, 0.14);
+  --dsw-alias-border-l2-darkmode-thin: rgba(123, 104, 238, 0.18);
+  --dsw-alias-border-l2: rgba(123, 104, 238, 0.25);
+  --dsw-alias-border-l3: rgba(123, 104, 238, 0.45);
+
+  --dsw-alias-brand-primary: #7b68ee;
+  --dsw-alias-brand-text: #1d1b38;
+
+  --dsw-alias-button-elevated-fill: rgba(255, 255, 255, 0.94);
+  --dsw-alias-button-floating-fill: rgba(255, 255, 255, 0.97);
+  --dsw-alias-button-floating-hover: #f3f0ff;
+  --dsw-alias-button-info-fill: #7b68ee;
+  --dsw-alias-button-info-hover: #6c59e3;
+
+  --dsw-alias-interactive-bg-active: rgba(123, 104, 238, 0.18);
+  --dsw-alias-interactive-bg-hover: rgba(123, 104, 238, 0.08);
+  --dsw-alias-interactive-bg-hover-solid: #f0edff;
+
+  --dsw-alias-label-primary: #1d1b38;
+  --dsw-alias-label-primary-bluish: #282352;
+  --dsw-alias-label-secondary: #4c477a;
+  --dsw-alias-label-tertiary: #7b76a6;
+  --dsw-alias-label-caption: #9893c2;
+
+  --dsw-alias-state-business-primary: #7b68ee;
+  --dsw-alias-state-business-tertiary: #f0edff;
+  --dsw-alias-state-warn-label: #b45309;
+  --dsw-alias-state-warn-tertiary: rgba(245, 158, 11, 0.18);
+
+  --dsw-shadow-lv2: var(--gemini-shadow);
+  --dsw-specific-input-major: rgba(255, 255, 255, 0.94);
+  --dsw-specific-selector: rgba(245, 243, 255, 0.94);
+  --dsw-specific-sidebar-fill: rgba(250, 249, 255, 0.97);
+
+  color: var(--gemini-ink);
+  background-color: #f3f0fd;
+}
+
+body[data-dsh-gemini-skin][data-ds-dark-theme] {
+  --gemini-ink: #f3f0ff;
+  --gemini-purple: #9d8df1;
+  --gemini-shadow: 0 18px 58px rgba(0, 0, 0, 0.55), 0 2px 12px rgba(123, 104, 238, 0.25);
+
+  --dsw-alias-bg-base: transparent;
+  --dsw-alias-bg-layer-1: rgba(16, 14, 32, 0.88);
+  --dsw-alias-bg-layer-2: rgba(21, 18, 42, 0.90);
+  --dsw-alias-bg-layer-3: rgba(27, 23, 54, 0.93);
+  --dsw-alias-bg-overlay: rgba(12, 10, 24, 0.97);
+
+  --dsw-alias-border-l1: rgba(167, 139, 250, 0.20);
+  --dsw-alias-border-l2-darkmode-thin: rgba(167, 139, 250, 0.26);
+  --dsw-alias-border-l2: rgba(167, 139, 250, 0.35);
+  --dsw-alias-border-l3: rgba(167, 139, 250, 0.60);
+
+  --dsw-alias-brand-primary: #9d8df1;
+  --dsw-alias-brand-text: #f3f0ff;
+
+  --dsw-alias-button-elevated-fill: rgba(30, 25, 60, 0.92);
+  --dsw-alias-button-floating-fill: rgba(36, 30, 72, 0.96);
+  --dsw-alias-button-floating-hover: #453a8a;
+  --dsw-alias-button-info-fill: #7b68ee;
+  --dsw-alias-button-info-hover: #8f7ef3;
+
+  --dsw-alias-interactive-bg-active: rgba(167, 139, 250, 0.24);
+  --dsw-alias-interactive-bg-hover: rgba(167, 139, 250, 0.14);
+  --dsw-alias-interactive-bg-hover-solid: #2c2557;
+
+  --dsw-alias-label-primary: #f3f0ff;
+  --dsw-alias-label-primary-bluish: #e0d8ff;
+  --dsw-alias-label-secondary: #c4baf2;
+  --dsw-alias-label-tertiary: #9d93cf;
+  --dsw-alias-label-caption: #7e75ab;
+
+  --dsw-alias-state-business-primary: #9d8df1;
+  --dsw-alias-state-business-tertiary: #2c2557;
+  --dsw-alias-state-warn-label: #fbbf24;
+  --dsw-alias-state-warn-tertiary: rgba(251, 191, 36, 0.18);
+
+  --dsw-specific-input-major: rgba(18, 15, 36, 0.88);
+  --dsw-specific-selector: rgba(32, 26, 64, 0.90);
+  --dsw-specific-sidebar-fill: rgba(10, 8, 20, 0.93);
+
+  color: var(--gemini-ink);
+  background-color: #0c0a1a;
+}
+
+/* Root & overlay layout */
+body[data-dsh-gemini-skin] [id='root'] {
+  position: relative;
+  background: transparent;
+}
+body[data-dsh-gemini-skin] [data-shell-overlay] {
+  z-index: 1000;
+}
+
+/* Conversation Column with Gemini Astrolabe Art */
+body[data-dsh-gemini-skin] :is([data-pane='conversation'], [class*='centerCol']) {
+  position: relative;
+  background:
+    linear-gradient(rgba(243, 240, 255, 0.32), rgba(243, 240, 255, 0.12)),
+    var(--gemini-bg-art) right center / cover no-repeat;
+}
+
+body[data-dsh-gemini-skin][data-ds-dark-theme] :is([data-pane='conversation'], [class*='centerCol']) {
+  background:
+    linear-gradient(rgba(12, 10, 26, 0.40), rgba(12, 10, 26, 0.15)),
+    var(--gemini-bg-art) right center / cover no-repeat;
+}
+
+body[data-dsh-gemini-skin] :is([data-pane='conversation'], [class*='centerCol']) :is([data-phase='hero'], [data-phase='active'], [data-phase='settling']) {
+  position: relative;
+}
+
+/* Gemini Character Element */
+body[data-dsh-gemini-skin] [data-gemini-character] {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  width: auto;
+  max-width: none;
+  bottom: 0;
+  left: -12px;
+  height: 64%;
+  object-fit: contain;
+  object-position: left bottom;
+  pointer-events: none;
+  filter: drop-shadow(0 14px 28px rgba(123, 104, 238, 0.20));
+  transition: opacity 400ms ease, height 500ms cubic-bezier(0.22, 0.78, 0.2, 1), filter 400ms ease;
+  -webkit-mask-image: linear-gradient(90deg, #000 68%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, #000 68%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  mask-composite: intersect;
+}
+
+body[data-dsh-gemini-skin][data-ds-dark-theme] [data-gemini-character] {
+  filter: drop-shadow(0 0 28px rgba(157, 141, 241, 0.50)) drop-shadow(0 16px 40px rgba(0, 0, 0, 0.65));
+}
+
+@media (max-width: 768px) {
+  body[data-dsh-gemini-skin] [data-gemini-character] {
+    height: 42%;
+    left: -8px;
+    opacity: 0.65;
+  }
+}
+
+/* Sidebar panel tuning */
+body[data-dsh-gemini-skin] :is([data-pane='sidebar'], [class*='sidebarCol']) > div {
+  position: relative;
+}
+
+body[data-dsh-gemini-skin] :is([data-pane='sidebar'], [class*='sidebarCol']) {
+  --dsw-alias-label-primary: #1d1b38;
+  --dsw-alias-label-secondary: #4c477a;
+  --dsw-alias-label-tertiary: #7b76a6;
+  --dsw-alias-label-caption: #9893c2;
+  --dsw-alias-border-l1: rgba(123, 104, 238, 0.12);
+  --dsw-alias-border-l2: rgba(123, 104, 238, 0.20);
+  --dsw-alias-button-elevated-fill: rgba(255, 255, 255, 0.88);
+  --dsw-alias-interactive-bg-hover: rgba(123, 104, 238, 0.07);
+  --dsw-alias-interactive-bg-active: rgba(123, 104, 238, 0.16);
+}
+
+body[data-dsh-gemini-skin][data-ds-dark-theme] :is([data-pane='sidebar'], [class*='sidebarCol']) {
+  --dsw-alias-label-primary: #f3f0ff;
+  --dsw-alias-label-secondary: #c4baf2;
+  --dsw-alias-label-tertiary: #9d93cf;
+  --dsw-alias-label-caption: #7e75ab;
+  --dsw-alias-border-l1: rgba(167, 139, 250, 0.18);
+  --dsw-alias-border-l2: rgba(167, 139, 250, 0.28);
+  --dsw-alias-interactive-bg-hover: rgba(167, 139, 250, 0.12);
+  --dsw-alias-interactive-bg-active: rgba(167, 139, 250, 0.22);
+}
+
+/* Gemini Chrome Corners */
+body[data-dsh-gemini-skin] [data-skin-chrome='gemini-corners'] span {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+body[data-dsh-gemini-skin] [data-skin-corner='top-left'] {
+  top: 6px;
+  left: 6px;
+  border-top: 2px solid var(--gemini-purple);
+  border-left: 2px solid var(--gemini-purple);
+  border-top-left-radius: 6px;
+}
+body[data-dsh-gemini-skin] [data-skin-corner='top-right'] {
+  top: 6px;
+  right: 6px;
+  border-top: 2px solid var(--gemini-purple);
+  border-right: 2px solid var(--gemini-purple);
+  border-top-right-radius: 6px;
+}
+body[data-dsh-gemini-skin] [data-skin-corner='bottom-left'] {
+  bottom: 6px;
+  left: 6px;
+  border-bottom: 2px solid var(--gemini-purple);
+  border-left: 2px solid var(--gemini-purple);
+  border-bottom-left-radius: 6px;
+}
+body[data-dsh-gemini-skin] [data-skin-corner='bottom-right'] {
+  bottom: 6px;
+  right: 6px;
+  border-bottom: 2px solid var(--gemini-purple);
+  border-right: 2px solid var(--gemini-purple);
+  border-bottom-right-radius: 6px;
+}

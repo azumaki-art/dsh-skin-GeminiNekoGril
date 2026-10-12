@@ -1,0 +1,4 @@
+# gemini-starlight-neko skin bundle patch: inserts public dsh.client entry into web plugin roster
+- insert:
+    - id: ui-skin-gemini
+      name: '@dsh-external/dsh-client-ui-skin-gemini'

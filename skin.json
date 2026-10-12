@@ -1,0 +1,29 @@
+{
+  "id": "gemini-starlight-neko",
+  "name": "Gemini·星空猫娘",
+  "nameEn": "Gemini Starlight Neko",
+  "author": "gemini-club",
+  "tagline": "Gemini 主题皮肤：双子星图与星空猫娘（昼夜双形态）",
+  "description": "适用于 DeepSeek Harness Web GUI 的 Gemini 主题皮肤。白昼与暗夜双形态立绘、双子星云与星盘对话背景、全息星芒徽标，融合 Google Gemini 科技蓝紫与二次元幻想风格。",
+  "tags": [
+    "gemini",
+    "starlight",
+    "neko",
+    "anime",
+    "purple",
+    "glass"
+  ],
+  "accent": "#7b68ee",
+  "bodyAttr": "data-dsh-gemini-skin",
+  "dshCompatibility": "0.1.1rc2",
+  "package": "@dsh-external/dsh-client-ui-skin-gemini",
+  "wiring": {
+    "id": "ui-skin-gemini",
+    "bundleWired": false
+  },
+  "preview": {
+    "light": "preview/light.webp",
+    "dark": "preview/dark.webp"
+  },
+  "order": 7
+}

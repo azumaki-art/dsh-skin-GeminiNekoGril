@@ -1,0 +1,13 @@
+# Ignore temporary Python scripts & build cache
+__pycache__/
+*.pyc
+
+# Ignore IDE settings if desired (optional)
+.idea/
+.vscode/
+
+# Ignore log files or temporary test/preview outputs
+preview/check_vis.png
+preview/char_*
+preview/green_*
+preview/test_*
